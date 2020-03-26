@@ -1,0 +1,45 @@
+.NIETSPEELBAAR {
+	-fx-background-color: white;
+}
+
+.LEEG {
+	-fx-background-color: #303030;
+}
+
+.ZWART {
+	-fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+	-fx-background-color: #303030;
+	-fx-background-image: url(zwartesteen.png);
+	-fx-background-size: 30px 30px;
+}
+
+.WIT {
+	-fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+	-fx-background-color: #303030;
+	-fx-background-image: url(wittesteen.png);
+	-fx-background-size: 30px 30px;
+}
+
+.ZWARTDAM {
+	-fx-background-repeat: no-repeat;
+        -fx-background-position: center;
+	-fx-background-color: #303030;
+	-fx-background-image: url(zwartedam.png);
+	-fx-background-size: 30px 30px;
+}
+
+.WITDAM {
+	-fx-background-repeat: no-repeat;
+        -fx-background-position: center;
+	-fx-background-color: #303030;
+	-fx-background-image: url(wittedam.png);
+	-fx-background-size: 30px 30px;
+}
+
+.selectedbutton {
+	-fx-border-style: solid;
+	-fx-border-color: yellow;
+	-fx-border-width: 3px;
+}
