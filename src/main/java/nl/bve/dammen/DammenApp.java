@@ -1,4 +1,7 @@
+package nl.bve.dammen;
+
 import java.io.File;
+import java.net.URISyntaxException;
 
 import javafx.animation.RotateTransition;
 import javafx.application.Application;
@@ -18,8 +21,8 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 import javafx.util.Duration;
-import dammen.domein.ComputerSpeler;
-import dammen.domein.Damspel;
+import nl.bve.dammen.domein.ComputerSpeler;
+import nl.bve.dammen.domein.Damspel;
 
 public class DammenApp extends Application implements EventHandler<ActionEvent> {
 	private Damspel spel = new Damspel();
@@ -32,7 +35,7 @@ public class DammenApp extends Application implements EventHandler<ActionEvent> 
 	private String spelerUitzicht = spel.getSpeler();
 	private Stage stage;
 	
-	public void start(Stage stage) {
+	public void start(Stage stage) throws URISyntaxException {
 		this.stage = stage;
 		BorderPane applicatiePanel = new BorderPane();
 		
@@ -98,7 +101,8 @@ public class DammenApp extends Application implements EventHandler<ActionEvent> 
 		BorderPane.setAlignment(meldingen, Pos.BOTTOM_RIGHT);
 		
 		Scene scene = new Scene(applicatiePanel);
-		File cssSheet = new File("layout/stylesheet.css");
+		File cssSheet = new File(getClass().getResource("stylesheet.css").toURI());
+		// File cssSheet = new File("layout/stylesheet.css");
 		scene.getStylesheets().add(cssSheet.toURI().toString());
 		stage.setResizable(false);
 		stage.setScene(scene);

@@ -1,4 +1,4 @@
-package dammen.domein;
+package nl.bve.dammen.domein;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -78,13 +78,13 @@ import javafx.beans.property.StringProperty;
  */
 public class Damspel {
 	private enum Veld { WIT, ZWART, WITDAM, ZWARTDAM, LEEG, NIETSPEELBAAR }
-	private enum Richting { NOORDWEST, NOORDOOST, ZUIDOOST, ZUIDWEST };
+	private enum Richting { NOORDWEST, NOORDOOST, ZUIDOOST, ZUIDWEST }
 	private enum Speler { WIT, ZWART, WIT_WINT, ZWART_WINT }
 
 	private Veld[] bord = new Veld[100];
 	private Speler speler = Speler.ZWART;
-	private StringProperty meldingProperty = new SimpleStringProperty();
-	private StringProperty spelerProperty = new SimpleStringProperty();
+	private final StringProperty meldingProperty = new SimpleStringProperty();
+	private final StringProperty spelerProperty = new SimpleStringProperty();
 	
 	/**
 	 * Constructor maakt een volledig ingesteld nieuw dambord.

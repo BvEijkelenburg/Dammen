@@ -1,4 +1,4 @@
-package dammen.domein;
+package nl.bve.dammen.domein;
 
 public class ComputerSpeler {
 	private boolean enabled = false;
