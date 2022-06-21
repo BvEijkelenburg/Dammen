@@ -7,14 +7,6 @@ Als je de opdrachten zelf wilt uitvoeren, kan je dit project clonen en de klasse
 
 Na clonen kan je dit project in IntelliJ openen en de klasse TekenApp uitvoeren, of met behulp van Maven (en de commandline):
 
-Compileer het project:
-
-```
-mvn compile
-```
-
-Run het project:
-
 ```
 mvn javafx:run
 ```
